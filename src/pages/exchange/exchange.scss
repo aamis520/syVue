@@ -1,0 +1,374 @@
+.market-table {
+  background-color: #191f27;
+  font-size: 14px;
+  color: #8d9fb8;
+  position: relative;
+}
+
+.vuebar-element {
+  height: 177px;
+  width: 100%;
+  background: #191f27;
+  transform: rotate3d(0, 0, 0, 0);
+}
+
+.market-list-header,
+.market-list {
+  width: 94%;
+  background: #191f27; // overflow: hidden;
+  white-space: nowrap;
+  line-height: 1.5;
+  .rel1 {
+    width: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top; // padding-top: 9px;
+  }
+  .rel2 {
+    width: 50px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .rel3 {
+    width: 85px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .rel4 {
+    width: 80px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+  }
+  .rel4.rise {
+    width: 80px;
+    display: inline-block;
+    color: #a4454b;
+    text-align: center; // background: url('~@/assets/img/red_reduce.png') 15% 50% no-repeat;
+    // background-size:8px;
+    // font-weight: bold;
+  }
+  .rel4.rise::before {
+    content: '-';
+    font-size: 14px;
+  }
+  .rel4.fall {
+    // /*width: 80px;*/
+    display: inline-block;
+    color: #5ead6f;
+    text-align: center; // background: url('~@/assets/img/green_add.png') 0 50% no-repeat;
+    // background-size:8px 8px;
+    // font-weight: bold;
+  }
+  .rel4.fall::before {
+    content: '+';
+    font-size: 14px;
+  }
+}
+
+.market-list {
+  height: 33px;
+  line-height: 33px;
+}
+
+.market-list:hover,
+.mycoin-list:hover {
+  background: #232d39;
+}
+
+.market-list.active {
+  background: #232d39;
+}
+
+.mycoin-list-header,
+.mycoin-list {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #191f27;
+  color: #c2c3ca;
+  line-height: 1.5;
+  font-size: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  .rel1 {
+    width: 80px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .rel2 {
+    width: 140px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .rel3 {
+    width: 80px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .rel4 {
+    min-width: 48px;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 4px;
+  }
+  .get-coin {
+    min-width: 36px;
+    height: 21px;
+    background-color: #344253;
+    color: #8e9aa9;
+    border-radius: 0;
+    text-align: center;
+    margin-left: 0px;
+    padding: 0 2px;
+  }
+  .add-coin {
+    min-width: 36px;
+    height: 21px;
+    background-color: #495d75;
+    color: #8e9aa9;
+    border-radius: 0;
+    text-align: center;
+    padding: 0 2px;
+  }
+}
+
+.market-list-header {
+  font-size: 12px;
+  color: #67778c;
+  line-height: 30px;
+  margin-top: 8px;
+  height: 30px;
+}
+
+.pad15 {
+  padding: 0 15px;
+  margin: 10px 8px 0 0;
+}
+
+.market-list {
+  /*text-align: center;*/
+  cursor: pointer;
+  font-size: 12px;
+  .rel1 {
+    img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 15px;
+    }
+  }
+}
+
+.mycoins-table {
+  padding: 0 15px;
+}
+
+.notice-list {
+  width: 100%;
+  background: #191f27;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #c2c3ca;
+  list-style-type: none;
+  padding-left: 12px;
+  padding-right: 12px;
+  .notice-squre {
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+  .notice-li {
+    font-size: 12px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .notice-li:first-child {
+    margin-top: 18px !important;
+  }
+}
+
+.center-table {
+  text-align: center;
+}
+
+#show-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.i_roate {
+  transform: rotate(90deg)
+}
+
+.normal-header-more {
+  color: #67778c;
+  font-size: 12px;
+  float: right;
+  width: auto;
+  height: 40px;
+  line-height: 40px;
+  margin-right: 20px;
+}
+
+.details {
+  width: 100%;
+  background: #151922;
+  .details_title {
+    overflow: hidden;
+    li {
+      list-style: none;
+      width: 20%;
+      height: 45px;
+      line-height: 45px;
+      float: left;
+      color: #8d9fb8;
+      text-align: center;
+    }
+  }
+  .details_section {
+    overflow: hidden;
+    li {
+      list-style: none;
+      width: 20%;
+      height: 45px;
+      line-height: 45px;
+      float: left;
+      color: #f6f9ff;
+      text-align: center;
+    }
+  }
+  .details_loading {
+    text-align: center;
+    padding: 15px 0;
+  }
+}
+
+.tiny-icon {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+.imgshow {
+  display: block !important;
+}
+
+.imghide {
+  display: none !important;
+}
+
+.amount-input {
+  font-size: 12px !important
+}
+
+.btn_disabled {
+  opacity: 0.3
+}
+
+// 交易密码设置成功弹窗
+.shadow {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 30;
+}
+
+.transaction {
+  width: 330px;
+  min-height: 330px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: -165px 0 0 -165px;
+  z-index: 100;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.transaction img {
+  width: 330px;
+  display: block;
+  height: 167px;
+}
+
+.transactionCode {
+  background: #fff;
+  // height: 163px;
+  overflow: hidden;
+}
+
+.transactionCode ul li {
+  list-style: none;
+}
+
+.transactionCode ul li:first-child {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #262f3b;
+}
+
+.transactionCode ul li:nth-child(2) {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 6px;
+  color: #4c54f9;
+}
+
+.transactionCode ul li:last-child {
+  margin-top: 25px;
+  height: 30px;
+}
+
+.later {
+  background: #b6b7b7;
+  margin-left: 42px;
+  width: 108px;
+  height: 30px;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  color: #fcfcf2;
+  cursor: pointer;
+}
+
+.toAuthenticate {
+  background: #4c54f9;
+  margin-left: 26.4px;
+  width: 108px;
+  height: 30px;
+  font-size: 14px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  color: #fcfcf2;
+  cursor: pointer;
+}
+
+.buying {
+  color: #4C875A;
+}
+
+.sell {
+  color: #A44449;
+}
+
